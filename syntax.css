@@ -1,0 +1,75 @@
+/* komentarz */
+/* p - paragraf*/
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+h1{
+    font-size: 132px;
+    }
+
+p{
+    font-size: 18x;
+    color: blue
+}
+
+p{
+    font-size: 18x;
+    color: blue
+}
+a{
+    text-decoration: underline;
+    color:green
+}
+/*span last rule always wins*/
+span{
+color: blue
+}
+
+span{
+    color: red
+    }
+
+#dupa p{
+        color:yellow
+    }
+
+.test{
+    color: violet;
+}
+
+/* to powoduje, że nic tego nie nadpisze*/
+p{
+    color:aquamarine !important;
+}
+/* a to spowoduje, że reguła będzie dotyczyć wwszystkich selektorów*/
+p, div{
+    color: red;
+    font-family: Impact;
+}
+
+#dupa h1{
+    text-decoration-line: underline;
+}
+
+/* wszystkie dzieci dupa*/
+#dupa > h1{
+    font-style: italic;
+}
+
+/*dotyczy tylko h2 i pierwszego p*/
+#nowy h2 + h1{
+    color: seagreen;
+    }
+
+/*dotyczy wszystkich div które mają jakąkolwiek class*/
+div[class] span{
+    color: seagreen;
+    background-color: skyblue;
+}
+
+
+
+
+
